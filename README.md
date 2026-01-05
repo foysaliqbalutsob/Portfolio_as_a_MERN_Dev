@@ -3,7 +3,7 @@
 ![Portfolio Preview](https://img.shields.io/badge/React-18.2.0-blue?style=for-the-badge&logo=react) ![Portfolio Preview](https://img.shields.io/badge/Vite-7.3.0-646CFF?style=for-the-badge&logo=vite) ![Portfolio Preview](https://img.shields.io/badge/Tailwind_CSS-3.4.0-38B2AC?style=for-the-badge&logo=tailwind-css) ![Portfolio Preview](https://img.shields.io/badge/Framer_Motion-11.0.0-0055FF?style=for-the-badge&logo=framer)
 
 <div align="center">
-  <img src="./public/portfolio_screenshot.png" alt="Portfolio Screenshot" width="100%" style="border-radius: 10px; box-shadow: 0 10px 30px rgba(0,0,0,0.3);" />
+  <img src="https://raw.githubusercontent.com/foysaliqbalutsob/Portfolio_as_a_MERN_Dev/main/public/portfolio_screenshot.png" alt="Portfolio Screenshot" width="100%" style="border-radius: 10px; box-shadow: 0 10px 30px rgba(0,0,0,0.3);" />
   <p><em>Modern, responsive portfolio showcasing MERN stack development skills</em></p>
 </div>
 
