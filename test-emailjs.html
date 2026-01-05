@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EmailJS Test</title>
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+</head>
+<body>
+    <h1>EmailJS Test</h1>
+    <button onclick="testEmail()">Test Email Sending</button>
+    <div id="result"></div>
+
+    <script>
+        // For testing, use your actual EmailJS values from .env file
+        const SERVICE_ID = 'service_xvibugj';      // Your actual service ID
+        const TEMPLATE_ID = 'template_59m85eq';    // Your actual template ID
+        const PUBLIC_KEY = 'td4FMeOF8LLQBRXV9FYwd'; // Your actual public key
+
+        // Initialize EmailJS with your public key
+        emailjs.init(PUBLIC_KEY);
+
+        function testEmail() {
+            const resultDiv = document.getElementById('result');
+            resultDiv.innerHTML = 'Sending...';
+
+            // Test email parameters
+            const templateParams = {
+                from_name: 'Test User',
+                from_email: 'test@example.com',
+                subject: 'Test Email from Portfolio',
+                message: 'This is a test message to verify EmailJS setup works.',
+                to_email: 'foysaliqbalutsob2202113@gmail.com'
+            };
+
+            emailjs.send('YOUR_SERVICE_ID_HERE', 'YOUR_TEMPLATE_ID_HERE', templateParams)
+                .then(function(response) {
+                    resultDiv.innerHTML = '<span style="color: green;">✅ SUCCESS: Email sent! Check your inbox.</span>';
+                    console.log('SUCCESS!', response.status, response.text);
+                }, function(error) {
+                    resultDiv.innerHTML = '<span style="color: red;">❌ FAILED: ' + error.text + '</span>';
+                    console.log('FAILED...', error);
+                });
+        }
+    </script>
+</body>
+</html>
