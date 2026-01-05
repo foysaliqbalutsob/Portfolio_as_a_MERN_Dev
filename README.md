@@ -4,6 +4,7 @@
 
 <div align="center">
   <img src="./public/portfolio_screenshot.png" alt="Portfolio Screenshot" width="100%" style="border-radius: 10px; box-shadow: 0 10px 30px rgba(0,0,0,0.3);" />
+  <p>Live Link: https://darling-horse-694cf9.netlify.app/ </p>
   <p><em>Modern, responsive portfolio showcasing MERN stack development skills</em></p>
 </div>
 
@@ -125,7 +126,7 @@ portfolio/
 
 5. **View in browser**
    ```
-   🌐 http://localhost:5173
+   🌐 https://darling-horse-694cf9.netlify.app/
    ```
 
 ### Production Build
